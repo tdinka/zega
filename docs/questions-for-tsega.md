@@ -24,3 +24,9 @@ Open items from the first build (Oct 28, 2026). Move each to "Answered" once you
 ## Notes on sources
 
 - Question text: USCIS Form M-1778 (09/25), read from a public copy of the official PDF. All 128 questions and the section ranges come from it. The 20 starred questions were cross-checked against a second site. A third site (citizennow.com) had a wrong starred list (it included Q57 and was missing Q94 and Q113), so I ignored it.
+
+## Open (Oct 28, 2026)
+- Who runs Zega in the Terms: your legal name, or an LLC? (`OPERATOR_NAME` in src/lib/config.ts)
+- Governing state for the Terms: set to New York for now. Confirm.
+- Support email address (`SUPPORT_EMAIL`).
+- Name: keep Zega (low legal risk; note ZegaHabesha, a 17+ dating app, shares the prefix in the App Store) or switch to Zegenet (ዜግነት, "citizenship")? Then buy the domain.

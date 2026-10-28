@@ -1,12 +1,35 @@
 {
-  "asOf": "2026-04-13",
+  "asOf": "2026-10-28",
   "source": "USCIS test updates page (uscis.gov/citizenship/testupdates), via the April 2026 copy published at https://mcl.org/wp-content/uploads/2026-04-Citizenship-Web-Update.pdf",
   "checkAt": "https://www.uscis.gov/citizenship/testupdates",
   "officials": {
-    "president": { "answers": ["Donald J. Trump", "Donald Trump", "Trump"] },
-    "vicePresident": { "answers": ["JD Vance", "James David Vance", "Vance"] },
-    "speaker": { "answers": ["Mike Johnson", "Johnson"] },
-    "chiefJustice": { "answers": ["John Roberts", "John G. Roberts, Jr.", "Roberts"] }
+    "president": {
+      "answers": [
+        "Donald J. Trump",
+        "Donald Trump",
+        "Trump"
+      ]
+    },
+    "vicePresident": {
+      "answers": [
+        "JD Vance",
+        "James David Vance",
+        "Vance"
+      ]
+    },
+    "speaker": {
+      "answers": [
+        "Mike Johnson",
+        "Johnson"
+      ]
+    },
+    "chiefJustice": {
+      "answers": [
+        "John Roberts",
+        "John G. Roberts, Jr.",
+        "Roberts"
+      ]
+    }
   },
-  "note": "Update these whenever USCIS updates its test updates page. Tsega: please confirm against uscis.gov before launch."
+  "note": "Re-checked Oct 28, 2026: no changes since the April 2026 USCIS update (Johnson is still Speaker per speaker.gov; Roberts still Chief Justice). WATCH: the House changes over on Jan 3, 2027 after the Nov 2026 midterms, and the Speaker may change. Re-check uscis.gov/citizenship/testupdates in early January 2027."
 }

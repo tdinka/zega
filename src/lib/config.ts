@@ -5,6 +5,12 @@ export const APP_NAME_AM = "ዜጋ";
 export const PRICE_CENTS = 1999;
 export const PRICE_LABEL = "$19.99";
 export const SUPPORT_EMAIL = "support@example.com"; // TODO: replace with a real inbox before launch
+/** Who runs Zega, shown in the Terms. TODO before launch: Tsega's legal name or her LLC. */
+export const OPERATOR_NAME = "TODO: your name or company";
+/** U.S. state whose law governs the Terms. TODO: confirm. */
+export const GOVERNING_STATE = "New York";
+export const REFUND_DAYS = 30;
+export const LEGAL_UPDATED = "October 28, 2026";
 
 /** Free learners can see Amharic help for questions 1 to this number. */
 export const FREE_AMHARIC_UP_TO = 15;

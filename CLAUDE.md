@@ -46,3 +46,15 @@ U.S. citizenship (2025 civics test) prep for Amharic speakers. Study, practice t
 - Variables: DATABASE_URL=${{Postgres.DATABASE_URL}}, APP_URL, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET. ALLOW_SIMULATED_PAYMENTS was removed (Oct 28).
 - Stripe: its own account "Zega" (separate from Fax Just Once), currently a **test sandbox**. Webhook "zega-test-site" -> /api/webhooks/stripe for checkout.session.completed + charge.refunded. Customer emails for successful payments and refunds are on. End-to-end test purchase with 4242 card worked Oct 28, 2026.
 - Going live: activate the Zega Stripe account (business details, bank), create a live-mode webhook to the same URL, swap both Railway Stripe variables to the live sk_live_/whsec_ values.
+
+## Where we left off (handoff from Claude chat, Oct 28, 2026)
+Done: app built; all 191 Amharic lines approved; on GitHub (tdinka/zega, private); live on Railway; Stripe connected in test mode (a 4242 test purchase worked end to end); officials re-checked; Terms/Privacy rewritten in plain language.
+
+Next, in order:
+1. Tsega's decisions (also in docs/questions-for-tsega.md): OPERATOR_NAME (her name or an LLC), GOVERNING_STATE (New York for now), SUPPORT_EMAIL, and the name Zega or Zegenet (ዜግነት). Then buy the domain (zega.app / learnzega.com / getzega.com are the candidates), add it in Railway → Settings → Networking → Custom Domain, update APP_URL and the Stripe webhook URL.
+2. Phone test: the mock interview on iPhone Safari and Android Chrome (microphone permissions, speech recognition).
+3. Stripe go-live (see the Hosting section).
+4. Get 5–10 real Amharic speakers preparing for the interview to try it; then a launch plan (Facebook/Telegram groups, churches, community organizations).
+5. Early January 2027: re-check content/officials.json (new Congress, so the Speaker may change).
+
+Note: node_modules isn't installed on this Mac yet. Run `npm install` before `npm run dev`. Local dev needs a .env (copy .env.example). DATABASE_URL can be the Railway Postgres public URL, or leave Stripe empty for simulated unlocks.
