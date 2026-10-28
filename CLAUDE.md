@@ -43,4 +43,6 @@ U.S. citizenship (2025 civics test) prep for Amharic speakers. Study, practice t
 - Railway project "zega": service `zega` (auto-deploys from GitHub tdinka/zega on every push) + `Postgres`.
 - Test site: https://zega-production.up.railway.app (port 8080).
 - Custom start command (set in Railway, not in the repo): `npx prisma db push --skip-generate && npm start`, so the Purchase table is created/updated on each deploy.
-- Variables: DATABASE_URL=${{Postgres.DATABASE_URL}}, APP_URL, ALLOW_SIMULATED_PAYMENTS=1 (test mode: free unlocks). **Remove ALLOW_SIMULATED_PAYMENTS and add the Stripe keys before real launch.**
+- Variables: DATABASE_URL=${{Postgres.DATABASE_URL}}, APP_URL, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET. ALLOW_SIMULATED_PAYMENTS was removed (Oct 28).
+- Stripe: its own account "Zega" (separate from Fax Just Once), currently a **test sandbox**. Webhook "zega-test-site" -> /api/webhooks/stripe for checkout.session.completed + charge.refunded. Customer emails for successful payments and refunds are on. End-to-end test purchase with 4242 card worked Oct 28, 2026.
+- Going live: activate the Zega Stripe account (business details, bank), create a live-mode webhook to the same URL, swap both Railway Stripe variables to the live sk_live_/whsec_ values.
