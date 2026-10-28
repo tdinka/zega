@@ -1,0 +1,26 @@
+// One place for the name and price, so renaming or repricing is a one-line change.
+
+export const APP_NAME = "Zega"; // ዜጋ = "citizen" in Amharic. Working name: check it's free to use.
+export const APP_NAME_AM = "ዜጋ";
+export const PRICE_CENTS = 1999;
+export const PRICE_LABEL = "$19.99";
+export const SUPPORT_EMAIL = "support@example.com"; // TODO: replace with a real inbox before launch
+
+/** Free learners can see Amharic help for questions 1 to this number. */
+export const FREE_AMHARIC_UP_TO = 15;
+
+export function appUrl(): string {
+  return (process.env.APP_URL || "http://localhost:3000").replace(/\/$/, "");
+}
+
+export function stripeEnabled(): boolean {
+  return Boolean(process.env.STRIPE_SECRET_KEY);
+}
+
+/**
+ * Show Amharic Tsega hasn't approved yet? Only on her own computer
+ * (npm run dev) or when SHOW_AMHARIC_DRAFTS=1. Never on the live site.
+ */
+export function showDrafts(): boolean {
+  return process.env.NODE_ENV === "development" || process.env.SHOW_AMHARIC_DRAFTS === "1";
+}

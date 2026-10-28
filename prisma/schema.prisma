@@ -1,0 +1,24 @@
+// Zega — data model. The app keeps study progress in each person's browser;
+// the database only records purchases so an unlock code can be checked.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Purchase {
+  id              String    @id @default(cuid())
+  code            String    @unique // unlock code shown to the buyer, e.g. ZEGA-7K2M-Q9TD
+  status          String    @default("pending") // pending | paid | refunded
+  email           String?
+  stripeSessionId String?   @unique
+  paymentIntent   String?
+  amountCents     Int
+  paidAt          DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}

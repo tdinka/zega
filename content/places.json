@@ -1,0 +1,341 @@
+{
+ "note": "State and territory capitals (these rarely change). Senators, representatives and governors are NOT stored: people look them up and type their own answer, because they change with elections.",
+ "places": [
+  {
+   "code": "AL",
+   "name": "Alabama",
+   "type": "state",
+   "capital": "Montgomery"
+  },
+  {
+   "code": "AK",
+   "name": "Alaska",
+   "type": "state",
+   "capital": "Juneau"
+  },
+  {
+   "code": "AZ",
+   "name": "Arizona",
+   "type": "state",
+   "capital": "Phoenix"
+  },
+  {
+   "code": "AR",
+   "name": "Arkansas",
+   "type": "state",
+   "capital": "Little Rock"
+  },
+  {
+   "code": "CA",
+   "name": "California",
+   "type": "state",
+   "capital": "Sacramento"
+  },
+  {
+   "code": "CO",
+   "name": "Colorado",
+   "type": "state",
+   "capital": "Denver"
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "type": "state",
+   "capital": "Hartford"
+  },
+  {
+   "code": "DE",
+   "name": "Delaware",
+   "type": "state",
+   "capital": "Dover"
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "type": "state",
+   "capital": "Tallahassee"
+  },
+  {
+   "code": "GA",
+   "name": "Georgia",
+   "type": "state",
+   "capital": "Atlanta"
+  },
+  {
+   "code": "HI",
+   "name": "Hawaii",
+   "type": "state",
+   "capital": "Honolulu"
+  },
+  {
+   "code": "ID",
+   "name": "Idaho",
+   "type": "state",
+   "capital": "Boise"
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "type": "state",
+   "capital": "Springfield"
+  },
+  {
+   "code": "IN",
+   "name": "Indiana",
+   "type": "state",
+   "capital": "Indianapolis"
+  },
+  {
+   "code": "IA",
+   "name": "Iowa",
+   "type": "state",
+   "capital": "Des Moines"
+  },
+  {
+   "code": "KS",
+   "name": "Kansas",
+   "type": "state",
+   "capital": "Topeka"
+  },
+  {
+   "code": "KY",
+   "name": "Kentucky",
+   "type": "state",
+   "capital": "Frankfort"
+  },
+  {
+   "code": "LA",
+   "name": "Louisiana",
+   "type": "state",
+   "capital": "Baton Rouge"
+  },
+  {
+   "code": "ME",
+   "name": "Maine",
+   "type": "state",
+   "capital": "Augusta"
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "type": "state",
+   "capital": "Annapolis"
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "type": "state",
+   "capital": "Boston"
+  },
+  {
+   "code": "MI",
+   "name": "Michigan",
+   "type": "state",
+   "capital": "Lansing"
+  },
+  {
+   "code": "MN",
+   "name": "Minnesota",
+   "type": "state",
+   "capital": "Saint Paul"
+  },
+  {
+   "code": "MS",
+   "name": "Mississippi",
+   "type": "state",
+   "capital": "Jackson"
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "type": "state",
+   "capital": "Jefferson City"
+  },
+  {
+   "code": "MT",
+   "name": "Montana",
+   "type": "state",
+   "capital": "Helena"
+  },
+  {
+   "code": "NE",
+   "name": "Nebraska",
+   "type": "state",
+   "capital": "Lincoln"
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "type": "state",
+   "capital": "Carson City"
+  },
+  {
+   "code": "NH",
+   "name": "New Hampshire",
+   "type": "state",
+   "capital": "Concord"
+  },
+  {
+   "code": "NJ",
+   "name": "New Jersey",
+   "type": "state",
+   "capital": "Trenton"
+  },
+  {
+   "code": "NM",
+   "name": "New Mexico",
+   "type": "state",
+   "capital": "Santa Fe"
+  },
+  {
+   "code": "NY",
+   "name": "New York",
+   "type": "state",
+   "capital": "Albany"
+  },
+  {
+   "code": "NC",
+   "name": "North Carolina",
+   "type": "state",
+   "capital": "Raleigh"
+  },
+  {
+   "code": "ND",
+   "name": "North Dakota",
+   "type": "state",
+   "capital": "Bismarck"
+  },
+  {
+   "code": "OH",
+   "name": "Ohio",
+   "type": "state",
+   "capital": "Columbus"
+  },
+  {
+   "code": "OK",
+   "name": "Oklahoma",
+   "type": "state",
+   "capital": "Oklahoma City"
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "type": "state",
+   "capital": "Salem"
+  },
+  {
+   "code": "PA",
+   "name": "Pennsylvania",
+   "type": "state",
+   "capital": "Harrisburg"
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "type": "state",
+   "capital": "Providence"
+  },
+  {
+   "code": "SC",
+   "name": "South Carolina",
+   "type": "state",
+   "capital": "Columbia"
+  },
+  {
+   "code": "SD",
+   "name": "South Dakota",
+   "type": "state",
+   "capital": "Pierre"
+  },
+  {
+   "code": "TN",
+   "name": "Tennessee",
+   "type": "state",
+   "capital": "Nashville"
+  },
+  {
+   "code": "TX",
+   "name": "Texas",
+   "type": "state",
+   "capital": "Austin"
+  },
+  {
+   "code": "UT",
+   "name": "Utah",
+   "type": "state",
+   "capital": "Salt Lake City"
+  },
+  {
+   "code": "VT",
+   "name": "Vermont",
+   "type": "state",
+   "capital": "Montpelier"
+  },
+  {
+   "code": "VA",
+   "name": "Virginia",
+   "type": "state",
+   "capital": "Richmond"
+  },
+  {
+   "code": "WA",
+   "name": "Washington",
+   "type": "state",
+   "capital": "Olympia"
+  },
+  {
+   "code": "WV",
+   "name": "West Virginia",
+   "type": "state",
+   "capital": "Charleston"
+  },
+  {
+   "code": "WI",
+   "name": "Wisconsin",
+   "type": "state",
+   "capital": "Madison"
+  },
+  {
+   "code": "WY",
+   "name": "Wyoming",
+   "type": "state",
+   "capital": "Cheyenne"
+  },
+  {
+   "code": "DC",
+   "name": "District of Columbia",
+   "type": "dc",
+   "capital": null
+  },
+  {
+   "code": "AS",
+   "name": "American Samoa",
+   "type": "territory",
+   "capital": "Pago Pago"
+  },
+  {
+   "code": "GU",
+   "name": "Guam",
+   "type": "territory",
+   "capital": "Hagåtña"
+  },
+  {
+   "code": "MP",
+   "name": "Northern Mariana Islands",
+   "type": "territory",
+   "capital": "Saipan"
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "type": "territory",
+   "capital": "San Juan"
+  },
+  {
+   "code": "VI",
+   "name": "U.S. Virgin Islands",
+   "type": "territory",
+   "capital": "Charlotte Amalie"
+  }
+ ]
+}

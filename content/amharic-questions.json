@@ -1,0 +1,776 @@
+{
+ "meta": {
+  "about": "Amharic help for each civics question: a translation of the question (q) and a short explanation of the answer (help). The test itself is in English, so the English answer stays the thing people practice saying.",
+  "status": "Reviewed Oct 28, 2026: Tsega approved 30 lines herself (approvedBy: tsega); the rest passed two independent AI reviews and her spot check (approvedBy: ai-check)."
+ },
+ "items": {
+  "1": {
+   "q": "የአሜሪካ መንግሥት ዓይነት ምንድን ነው?",
+   "help": "አሜሪካ ሪፐብሊክ ናት፤ ሕዝቡ በመረጣቸው ተወካዮች ትተዳደራለች። በእንግሊዝኛ \"Republic\" ይበሉ።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "2": {
+   "q": "የአገሪቱ የበላይ ሕግ ምንድን ነው?",
+   "help": "ሕገ መንግሥቱ ከሁሉም ሕጎች በላይ ነው። መልሱ፦ \"the Constitution\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "3": {
+   "q": "የአሜሪካ ሕገ መንግሥት የሚያደርገውን አንድ ነገር ይጥቀሱ።",
+   "help": "ሕገ መንግሥቱ መንግሥትን ያቋቁማል፣ ሥልጣኑን ይወስናል፣ የሕዝቡን መብቶች ይጠብቃል። ለምሳሌ \"Protects the rights of the people\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "4": {
+   "q": "ሕገ መንግሥቱ \"We the People\" (እኛ ሕዝቦች) በሚሉ ቃላት ይጀምራል። ይህ ምን ማለት ነው?",
+   "help": "ሥልጣን የሕዝቡ ነው፤ ሕዝቡ ራሱን ያስተዳድራል ማለት ነው። ለምሳሌ \"Self-government\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "5": {
+   "q": "በሕገ መንግሥቱ ላይ ለውጦች እንዴት ይደረጋሉ?",
+   "help": "በማሻሻያዎች (amendments) ይቀየራል። መልሱ፦ \"Amendments\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "6": {
+   "q": "የመብቶች ሰነድ (Bill of Rights) ምንን ይጠብቃል?",
+   "help": "የመጀመሪያዎቹ አሥር ማሻሻያዎች የሰዎችን መሠረታዊ መብቶች ይጠብቃሉ። መልሱ፦ \"The rights of Americans\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "7": {
+   "q": "የአሜሪካ ሕገ መንግሥት ስንት ማሻሻያዎች አሉት?",
+   "help": "ሃያ ሰባት (27) ማሻሻያዎች አሉት። መልሱ፦ \"Twenty-seven\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "8": {
+   "q": "የነጻነት መግለጫ (Declaration of Independence) ለምን አስፈላጊ ነው?",
+   "help": "አሜሪካ ከብሪታንያ ቁጥጥር ነጻ መሆኗንና ሰዎች ሁሉ እኩል መፈጠራቸውን ይገልጻል። ለምሳሌ \"It says all people are created equal\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "9": {
+   "q": "የአሜሪካ ቅኝ ግዛቶች ከብሪታንያ ነጻ መሆናቸውን የገለጸው መሠረታዊ ሰነድ የትኛው ነው?",
+   "help": "የነጻነት መግለጫ። መልሱ፦ \"Declaration of Independence\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "10": {
+   "q": "ከነጻነት መግለጫና ከሕገ መንግሥቱ ሁለት ጠቃሚ ሐሳቦችን ይጥቀሱ።",
+   "help": "ሁለት ይጥቀሱ፤ ለምሳሌ እኩልነት (\"Equality\") እና ነጻነት (\"Liberty\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "11": {
+   "q": "\"Life, Liberty, and the pursuit of Happiness\" (ሕይወት፣ ነጻነትና ደስታን መሻት) የሚሉት ቃላት በየትኛው መሠረታዊ ሰነድ ውስጥ ይገኛሉ?",
+   "help": "በነጻነት መግለጫ ውስጥ። መልሱ፦ \"Declaration of Independence\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "12": {
+   "q": "የአሜሪካ የኢኮኖሚ ሥርዓት ምንድን ነው?",
+   "help": "ካፒታሊዝም ወይም ነጻ ገበያ። መልሱ፦ \"Capitalism\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "13": {
+   "q": "የሕግ የበላይነት ምንድን ነው?",
+   "help": "ማንም ከሕግ በላይ አይደለም፤ መሪዎችም ጭምር ሕግን ማክበር አለባቸው። መልሱ፦ \"No one is above the law\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "14": {
+   "q": "ብዙ ሰነዶች በአሜሪካ ሕገ መንግሥት ላይ ተጽዕኖ አሳድረዋል። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ የነጻነት መግለጫ (\"Declaration of Independence\") ወይም የፌደራሊስት ጽሑፎች (\"Federalist Papers\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "15": {
+   "q": "መንግሥት ሦስት አካላት (ቅርንጫፎች) አሉት። ለምን?",
+   "help": "አንዱ አካል ከመጠን በላይ ኃይል እንዳይኖረው። መልሱ፦ \"Checks and balances\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "16": {
+   "q": "ሦስቱን የመንግሥት አካላት ይጥቀሱ።",
+   "help": "ሕግ አውጪ፣ ሕግ አስፈጻሚና፣ ሕግ ተርጓሚ። መልሱ፦ \"Legislative, executive, and judicial\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "17": {
+   "q": "የአሜሪካ ፕሬዚዳንት የትኛውን የመንግሥት አካል ይመራል?",
+   "help": "ሕግ አስፈጻሚውን አካል። መልሱ፦ \"Executive branch\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "18": {
+   "q": "ሕግ የሚያወጣው የፌደራል መንግሥት ክፍል የትኛው ነው?",
+   "help": "ኮንግረስ። መልሱ፦ \"Congress\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "19": {
+   "q": "የአሜሪካ ኮንግረስ ሁለቱ ክፍሎች ምን ምን ናቸው?",
+   "help": "ሴኔትና የተወካዮች ምክር ቤት። መልሱ፦ \"Senate and House of Representatives\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "20": {
+   "q": "የአሜሪካ ኮንግረስ አንድ ሥልጣን ይጥቀሱ።",
+   "help": "ሕግ ያወጣል፣ ጦርነት ያውጃል፣ የፌደራል በጀት ያዘጋጃል። ለምሳሌ \"Writes laws\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "21": {
+   "q": "ስንት የአሜሪካ ሴናተሮች አሉ?",
+   "help": "መቶ (100)። መልሱ፦ \"One hundred\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "22": {
+   "q": "የአንድ ሴናተር የሥራ ዘመን ስንት ዓመት ነው?",
+   "help": "ስድስት (6) ዓመት። መልሱ፦ \"Six years\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "23": {
+   "q": "አሁን ከክፍለ ግዛትዎ ሴናተሮች አንዱ ማን ነው?",
+   "help": "መልሱ እንደሚኖሩበት ክፍለ ግዛት ይለያያል። ስሙን አስቀድመው ይፈልጉና ይጻፉት።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "24": {
+   "q": "የተወካዮች ምክር ቤት ስንት ድምፅ ሰጪ አባላት አሉት?",
+   "help": "አራት መቶ ሠላሳ አምስት (435)። መልሱ፦ \"Four hundred thirty-five\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "25": {
+   "q": "የተወካዮች ምክር ቤት አባል የሥራ ዘመን ስንት ዓመት ነው?",
+   "help": "ሁለት (2) ዓመት። መልሱ፦ \"Two years\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "26": {
+   "q": "የምክር ቤት ተወካዮች ከሴናተሮች ያነሰ ጊዜ የሚያገለግሉት ለምንድን ነው?",
+   "help": "የሕዝቡን አስተያየት በቅርበት ለመከተል። መልሱ፦ \"To more closely follow public opinion\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "27": {
+   "q": "እያንዳንዱ ክፍለ ግዛት ስንት ሴናተሮች አሉት?",
+   "help": "ሁለት (2)። መልሱ፦ \"Two\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "28": {
+   "q": "እያንዳንዱ ክፍለ ግዛት ሁለት ሴናተሮች ያሉት ለምንድን ነው?",
+   "help": "ትናንሽ ክፍለ ግዛቶችም እኩል ውክልና እንዲኖራቸው። መልሱ፦ \"Equal representation\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "29": {
+   "q": "የእርስዎን የምክር ቤት ተወካይ ስም ይጥቀሱ።",
+   "help": "መልሱ እንደሚኖሩበት አካባቢ ይለያያል። ስሙን አስቀድመው ይፈልጉና ይጻፉት።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "30": {
+   "q": "አሁን የተወካዮች ምክር ቤት አፈ ጉባኤ ማን ነው?",
+   "help": "ይህ ስም በምርጫ ይቀየራል። ከፈተናዎ በፊት በ uscis.gov ላይ ያረጋግጡ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "31": {
+   "q": "የአሜሪካ ሴናተር ማንን ይወክላል?",
+   "help": "የክፍለ ግዛቱን ሕዝብ። መልሱ፦ \"People of their state\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "32": {
+   "q": "የአሜሪካ ሴናተሮችን ማን ይመርጣል?",
+   "help": "የክፍለ ግዛቱ ዜጎች። መልሱ፦ \"Citizens from their state\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "33": {
+   "q": "የተወካዮች ምክር ቤት አባል ማንን ይወክላል?",
+   "help": "በምርጫ ክልሉ (district) ያሉ ሰዎችን። መልሱ፦ \"People in their district\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "34": {
+   "q": "የተወካዮች ምክር ቤት አባላትን ማን ይመርጣል?",
+   "help": "የምርጫ ክልሉ ዜጎች። መልሱ፦ \"Citizens from their district\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "35": {
+   "q": "አንዳንድ ክፍለ ግዛቶች ከሌሎች የበለጠ ተወካዮች አሏቸው። ለምን?",
+   "help": "ብዙ ሕዝብ ስላላቸው። መልሱ፦ \"Because of the state's population\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "36": {
+   "q": "የአሜሪካ ፕሬዚዳንት ለስንት ዓመት ይመረጣል?",
+   "help": "ለአራት (4) ዓመት። መልሱ፦ \"Four years\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "37": {
+   "q": "የአሜሪካ ፕሬዚዳንት ማገልገል የሚችለው ሁለት የሥራ ዘመን ብቻ ነው። ለምን?",
+   "help": "በ22ኛው ማሻሻያ ምክንያት ነው፤ ዓላማውም ፕሬዚዳንቱ ከመጠን በላይ ሥልጣን እንዳይኖረው ነው። መልሱ፦ \"Because of the 22nd Amendment\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "38": {
+   "q": "አሁን የአሜሪካ ፕሬዚዳንት ማን ነው?",
+   "help": "ይህ ስም በምርጫ ይቀየራል። ከፈተናዎ በፊት በ uscis.gov ላይ ያረጋግጡ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "39": {
+   "q": "አሁን የአሜሪካ ምክትል ፕሬዚዳንት ማን ነው?",
+   "help": "ይህ ስም በምርጫ ይቀየራል። ከፈተናዎ በፊት በ uscis.gov ላይ ያረጋግጡ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "40": {
+   "q": "ፕሬዚዳንቱ ማገልገል ካልቻለ ማን ፕሬዚዳንት ይሆናል?",
+   "help": "ምክትል ፕሬዚዳንቱ። መልሱ፦ \"The Vice President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "41": {
+   "q": "የፕሬዚዳንቱን አንድ ሥልጣን ይጥቀሱ።",
+   "help": "ለምሳሌ ረቂቅ ሕጎችን ፈርሞ ሕግ ያደርጋል (\"Signs bills into law\") ወይም የጦር ኃይሎች ዋና አዛዥ ነው (\"Commander in Chief\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "42": {
+   "q": "የአሜሪካ ጦር ኃይሎች ዋና አዛዥ ማን ነው?",
+   "help": "ፕሬዚዳንቱ። መልሱ፦ \"The President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "43": {
+   "q": "ረቂቅ ሕጎች ሕግ እንዲሆኑ የሚፈርመው ማን ነው?",
+   "help": "ፕሬዚዳንቱ። መልሱ፦ \"The President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "44": {
+   "q": "ረቂቅ ሕጎችን ውድቅ የሚያደርገው (veto) ማን ነው?",
+   "help": "ፕሬዚዳንቱ። መልሱ፦ \"The President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "45": {
+   "q": "የፌደራል ዳኞችን የሚሾመው ማን ነው?",
+   "help": "ፕሬዚዳንቱ። መልሱ፦ \"The President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "46": {
+   "q": "ሕግ አስፈጻሚው አካል ብዙ ክፍሎች አሉት። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ ፕሬዚዳንቱ፣ ካቢኔው ወይም የፌደራል መሥሪያ ቤቶች። መልሱ፦ \"Cabinet\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "47": {
+   "q": "የፕሬዚዳንቱ ካቢኔ ምን ይሠራል?",
+   "help": "ፕሬዚዳንቱን ያማክራል። መልሱ፦ \"Advises the President\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "48": {
+   "q": "ሁለት የካቢኔ ደረጃ የሥራ መደቦችን ይጥቀሱ።",
+   "help": "ሁለት ይጥቀሱ፤ ለምሳሌ \"Secretary of State\" (የውጭ ጉዳይ ሚኒስትር) እና \"Attorney General\" (ጠቅላይ ዐቃቤ ሕግ)።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "49": {
+   "q": "የምርጫ ኮሌጅ (Electoral College) ለምን አስፈላጊ ነው?",
+   "help": "ፕሬዚዳንቱ ማን እንደሚሆን ይወስናል። መልሱ፦ \"It decides who is elected president\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "50": {
+   "q": "የዳኝነት አካሉ አንድ ክፍል ምንድን ነው?",
+   "help": "ጠቅላይ ፍርድ ቤት። መልሱ፦ \"Supreme Court\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "51": {
+   "q": "የዳኝነት አካሉ ምን ይሠራል?",
+   "help": "ሕጎችን ይመረምራል፣ ያብራራል፣ አንድ ሕግ ሕገ መንግሥቱን ይቃረን እንደሆነ ይወስናል። ለምሳሌ \"Explains laws\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "52": {
+   "q": "በአሜሪካ ከፍተኛው ፍርድ ቤት የትኛው ነው?",
+   "help": "ጠቅላይ ፍርድ ቤት። መልሱ፦ \"Supreme Court\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "53": {
+   "q": "በጠቅላይ ፍርድ ቤት ስንት መቀመጫዎች አሉ?",
+   "help": "ዘጠኝ (9)። መልሱ፦ \"Nine\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "54": {
+   "q": "አንድን ጉዳይ ለመወሰን ብዙውን ጊዜ ስንት የጠቅላይ ፍርድ ቤት ዳኞች ያስፈልጋሉ?",
+   "help": "አምስት (5)። መልሱ፦ \"Five\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "55": {
+   "q": "የጠቅላይ ፍርድ ቤት ዳኞች ለምን ያህል ጊዜ ያገለግላሉ?",
+   "help": "ዕድሜ ልካቸውን። መልሱ፦ \"For life\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "56": {
+   "q": "የጠቅላይ ፍርድ ቤት ዳኞች ዕድሜ ልካቸውን ያገለግላሉ። ለምን?",
+   "help": "ከፖለቲካ ነጻ እንዲሆኑ። መልሱ፦ \"To be independent of politics\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "57": {
+   "q": "አሁን የአሜሪካ ዋና ዳኛ (Chief Justice) ማን ነው?",
+   "help": "ይህ ስም ሊቀየር ይችላል። ከፈተናዎ በፊት በ uscis.gov ላይ ያረጋግጡ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "58": {
+   "q": "የፌደራል መንግሥት ብቻ ያለውን አንድ ሥልጣን ይጥቀሱ።",
+   "help": "ለምሳሌ የወረቀት ገንዘብ ማተም (\"Print paper money\") ወይም ጦርነት ማወጅ (\"Declare war\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "59": {
+   "q": "የክፍለ ግዛቶች ብቻ የሆነውን አንድ ሥልጣን ይጥቀሱ።",
+   "help": "ለምሳሌ ትምህርት መስጠት (\"Provide schooling and education\") ወይም መንጃ ፈቃድ መስጠት (\"Give a driver's license\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "60": {
+   "q": "የ10ኛው ማሻሻያ ዓላማ ምንድን ነው?",
+   "help": "ለፌደራል መንግሥት ያልተሰጡ ሥልጣኖች የክፍለ ግዛቶች ወይም የሕዝቡ ናቸው። መልሱ፦ \"Powers not given to the federal government belong to the states or to the people\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "61": {
+   "q": "አሁን የክፍለ ግዛትዎ አስተዳዳሪ (governor) ማን ነው?",
+   "help": "መልሱ እንደሚኖሩበት ክፍለ ግዛት ይለያያል። ስሙን አስቀድመው ይፈልጉና ይጻፉት።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "62": {
+   "q": "የክፍለ ግዛትዎ ዋና ከተማ ምንድን ነው?",
+   "help": "መልሱ እንደሚኖሩበት ክፍለ ግዛት ይለያያል።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "63": {
+   "q": "ማን መምረጥ እንደሚችል የሚናገሩ አራት የሕገ መንግሥት ማሻሻያዎች አሉ። አንዱን ይግለጹ።",
+   "help": "ለምሳሌ ዕድሜያቸው 18 እና ከዚያ በላይ የሆኑ ዜጎች መምረጥ ይችላሉ። መልሱ፦ \"Citizens eighteen and older can vote\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "64": {
+   "q": "በአሜሪካ በፌደራል ምርጫ መምረጥ፣ ለፌደራል ሥልጣን መወዳደርና በዳኝነት ሸንጎ (jury) ማገልገል የሚችለው ማን ነው?",
+   "help": "ዜጎች ብቻ። መልሱ፦ \"Citizens\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "65": {
+   "q": "በአሜሪካ የሚኖሩ ሰዎች ሁሉ ያሏቸው ሦስት መብቶች ምንድን ናቸው?",
+   "help": "ሦስት ይጥቀሱ፤ ለምሳሌ የመናገር ነጻነት (\"Freedom of speech\")፣ የሃይማኖት ነጻነት (\"Freedom of religion\")፣ የመሰብሰብ ነጻነት (\"Freedom of assembly\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "66": {
+   "q": "የታማኝነት ቃል ኪዳን (Pledge of Allegiance) ስንፈጽም ታማኝነታችንን የምናሳየው ለማን ነው?",
+   "help": "ለአሜሪካና ለሰንደቅ ዓላማዋ። መልሱ፦ \"The United States\" ወይም \"The flag\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "67": {
+   "q": "አዲስ ዜጎች በታማኝነት መሐላ (Oath of Allegiance) ቃል የሚገቡባቸውን ሁለት ነገሮች ይጥቀሱ።",
+   "help": "ሁለት ይጥቀሱ፤ ለምሳሌ ሕገ መንግሥቱን መከላከል (\"Defend the Constitution\") እና የአሜሪካን ሕጎች ማክበር (\"Obey the laws of the United States\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "68": {
+   "q": "ሰዎች እንዴት የአሜሪካ ዜጎች መሆን ይችላሉ?",
+   "help": "በአሜሪካ በመወለድ ወይም ዜግነት በማግኘት። መልሱ፦ \"Naturalize\"።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "69": {
+   "q": "በአሜሪካ የሕዝባዊ ተሳትፎ ሁለት ምሳሌዎችን ይጥቀሱ።",
+   "help": "ሁለት ይጥቀሱ፤ ለምሳሌ መምረጥ (\"Vote\") እና የማኅበረሰብ ቡድን መቀላቀል (\"Join a community group\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "70": {
+   "q": "አሜሪካውያን አገራቸውን የሚያገለግሉበትን አንድ መንገድ ይጥቀሱ።",
+   "help": "ለምሳሌ መምረጥ (\"Vote\") ወይም ግብር መክፈል (\"Pay taxes\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "71": {
+   "q": "የፌደራል ግብር መክፈል ለምን አስፈላጊ ነው?",
+   "help": "በሕግ ግዴታ ስለሆነና የፌደራል መንግሥትን ስለሚደግፍ። መልሱ፦ \"Required by law\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "72": {
+   "q": "ዕድሜያቸው ከ18 እስከ 25 የሆኑ ወንዶች ሁሉ በወታደራዊ ምልመላ መዝገብ (Selective Service) መመዝገባቸው አስፈላጊ ነው። አንድ ምክንያት ይጥቀሱ።",
+   "help": "በሕግ ግዴታ ነው። መልሱ፦ \"Required by law\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "73": {
+   "q": "ቅኝ ሰፋሪዎቹ ወደ አሜሪካ የመጡባቸው ብዙ ምክንያቶች አሉ። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ ነጻነት (\"Freedom\") ወይም የሃይማኖት ነጻነት (\"Religious freedom\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "74": {
+   "q": "አውሮፓውያን ከመምጣታቸው በፊት በአሜሪካ ይኖሩ የነበሩት እነማን ናቸው?",
+   "help": "ቀደምት አሜሪካውያን። መልሱ፦ \"American Indians\" ወይም \"Native Americans\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "75": {
+   "q": "ተወስደው በባርነት የተሸጡት የትኞቹ ሰዎች ናቸው?",
+   "help": "አፍሪካውያን። መልሱ፦ \"Africans\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "76": {
+   "q": "አሜሪካውያን ከብሪታንያ ነጻነትን ለማግኘት የተዋጉት የትኛውን ጦርነት ነው?",
+   "help": "የአሜሪካ አብዮት። መልሱ፦ \"American Revolution\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "77": {
+   "q": "አሜሪካውያን ከብሪታንያ ነጻነታቸውን ያወጁበትን አንድ ምክንያት ይጥቀሱ።",
+   "help": "ለምሳሌ ከፍተኛ ግብር (\"High taxes\") ወይም ያለ ውክልና የሚጣል ግብር (\"Taxation without representation\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "78": {
+   "q": "የነጻነት መግለጫውን የጻፈው ማን ነው?",
+   "help": "ቶማስ ጀፈርሰን። መልሱ፦ \"Thomas Jefferson\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "79": {
+   "q": "የነጻነት መግለጫው የጸደቀው መቼ ነው?",
+   "help": "ጁላይ 4, 1776 (በአውሮፓውያን አቆጣጠር)። መልሱ፦ \"July 4, 1776\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "80": {
+   "q": "የአሜሪካ አብዮት ብዙ ጠቃሚ ክስተቶች ነበሩት። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ የነጻነት መግለጫ (\"Declaration of Independence\") ወይም የዮርክታውን ጦርነት (\"Battle of Yorktown\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "81": {
+   "q": "13 የመጀመሪያ ክፍለ ግዛቶች ነበሩ። ከእነርሱ አምስቱን ይጥቀሱ።",
+   "help": "አምስት ይጥቀሱ፤ ለምሳሌ \"New York, New Jersey, Pennsylvania, Virginia, Georgia\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "82": {
+   "q": "በ1787 የተጻፈው መሠረታዊ ሰነድ የትኛው ነው?",
+   "help": "የአሜሪካ ሕገ መንግሥት። መልሱ፦ \"The Constitution\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "83": {
+   "q": "የፌደራሊስት ጽሑፎች (Federalist Papers) ሕገ መንግሥቱ እንዲጸድቅ ደግፈዋል። ከጸሐፊዎቹ አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ ጄምስ ማዲሰን። መልሱ፦ \"James Madison\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "84": {
+   "q": "የፌደራሊስት ጽሑፎች ለምን አስፈላጊ ነበሩ?",
+   "help": "ሰዎች ሕገ መንግሥቱን እንዲረዱ ረድተዋል። መልሱ፦ \"They helped people understand the Constitution\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "85": {
+   "q": "ቤንጃሚን ፍራንክሊን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ ፈጣሪ (\"Inventor\") ወይም የአሜሪካ ዲፕሎማት (\"U.S. diplomat\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "86": {
+   "q": "ጆርጅ ዋሽንግተን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "የአሜሪካ የመጀመሪያው ፕሬዚዳንት። መልሱ፦ \"First president of the United States\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "87": {
+   "q": "ቶማስ ጀፈርሰን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "የነጻነት መግለጫውን የጻፈ። መልሱ፦ \"Writer of the Declaration of Independence\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "88": {
+   "q": "ጄምስ ማዲሰን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "የሕገ መንግሥቱ አባት። መልሱ፦ \"Father of the Constitution\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "89": {
+   "q": "አሌክሳንደር ሃሚልተን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "የመጀመሪያው የገንዘብ ሚኒስትር። መልሱ፦ \"First Secretary of the Treasury\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "90": {
+   "q": "አሜሪካ በ1803 ከፈረንሳይ የገዛችው ግዛት የትኛው ነው?",
+   "help": "ሉዊዚያና። መልሱ፦ \"Louisiana Territory\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "91": {
+   "q": "በ1800ዎቹ አሜሪካ የተዋጋችውን አንድ ጦርነት ይጥቀሱ።",
+   "help": "ለምሳሌ የእርስ በርስ ጦርነት። መልሱ፦ \"Civil War\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "92": {
+   "q": "በሰሜንና በደቡብ መካከል የተደረገውን የአሜሪካ ጦርነት ይጥቀሱ።",
+   "help": "የእርስ በርስ ጦርነት። መልሱ፦ \"The Civil War\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "93": {
+   "q": "የእርስ በርስ ጦርነቱ ብዙ ጠቃሚ ክስተቶች ነበሩት። አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ የነጻ ማውጣት አዋጅ (\"Emancipation Proclamation\") ወይም የጌቲስበርግ ጦርነት (\"Battle of Gettysburg\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "94": {
+   "q": "አብርሃም ሊንከን በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "ባሮችን ነጻ አወጣ። መልሱ፦ \"Freed the slaves\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "95": {
+   "q": "የነጻ ማውጣት አዋጁ (Emancipation Proclamation) ምን አደረገ?",
+   "help": "ባሮችን ነጻ አወጣ። መልሱ፦ \"Freed the slaves\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "96": {
+   "q": "ባርነትን ያስቆመው የትኛው የአሜሪካ ጦርነት ነው?",
+   "help": "የእርስ በርስ ጦርነት። መልሱ፦ \"The Civil War\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "97": {
+   "q": "በአሜሪካ የተወለዱ ወይም ዜግነት የወሰዱና ለአሜሪካ ሕግ ተገዢ የሆኑ ሰዎች ሁሉ የአሜሪካ ዜጎች ናቸው የሚለው የትኛው ማሻሻያ ነው?",
+   "help": "14ኛው ማሻሻያ። መልሱ፦ \"14th Amendment\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "98": {
+   "q": "ወንዶች ሁሉ የመምረጥ መብት ያገኙት መቼ ነው?",
+   "help": "ከእርስ በርስ ጦርነቱ በኋላ፣ በ15ኛው ማሻሻያ። መልሱ፦ \"After the Civil War\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "99": {
+   "q": "በ1800ዎቹ የሴቶች መብት እንቅስቃሴ ከነበሩት መሪዎች አንዱን ይጥቀሱ።",
+   "help": "ለምሳሌ ሱዛን ቢ. አንተኒ። መልሱ፦ \"Susan B. Anthony\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "100": {
+   "q": "በ1900ዎቹ አሜሪካ የተዋጋችውን አንድ ጦርነት ይጥቀሱ።",
+   "help": "ለምሳሌ ሁለተኛው የዓለም ጦርነት። መልሱ፦ \"World War II\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "101": {
+   "q": "አሜሪካ አንደኛውን የዓለም ጦርነት የተቀላቀለችው ለምንድን ነው?",
+   "help": "ጀርመን የአሜሪካ መርከቦችን ስላጠቃች። መልሱ፦ \"Because Germany attacked U.S. ships\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "102": {
+   "q": "ሴቶች ሁሉ የመምረጥ መብት ያገኙት መቼ ነው?",
+   "help": "በ1920፣ በ19ኛው ማሻሻያ። መልሱ፦ \"1920\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "103": {
+   "q": "ታላቁ የኢኮኖሚ ድቀት (Great Depression) ምን ነበር?",
+   "help": "በዘመናዊ ታሪክ ረጅሙ የኢኮኖሚ ውድቀት። መልሱ፦ \"Longest economic recession in modern history\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "104": {
+   "q": "ታላቁ የኢኮኖሚ ድቀት የጀመረው መቼ ነው?",
+   "help": "በ1929 የአክሲዮን ገበያ ውድቀት። መልሱ፦ \"Stock market crash of 1929\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "105": {
+   "q": "በታላቁ የኢኮኖሚ ድቀትና በሁለተኛው የዓለም ጦርነት ጊዜ ፕሬዚዳንት የነበረው ማን ነው?",
+   "help": "ፍራንክሊን ሩዝቬልት። መልሱ፦ \"Franklin Roosevelt\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "106": {
+   "q": "አሜሪካ ሁለተኛውን የዓለም ጦርነት የተቀላቀለችው ለምንድን ነው?",
+   "help": "ጃፓን ፐርል ሃርበርን ስላጠቃች። መልሱ፦ \"Pearl Harbor\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "107": {
+   "q": "ድዋይት አይዘንሃወር በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "በሁለተኛው የዓለም ጦርነት ጄኔራል ነበር። መልሱ፦ \"General during World War II\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "108": {
+   "q": "በቀዝቃዛው ጦርነት ወቅት የአሜሪካ ዋና ተቀናቃኝ ማን ነበር?",
+   "help": "ሶቪየት ኅብረት። መልሱ፦ \"Soviet Union\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "109": {
+   "q": "በቀዝቃዛው ጦርነት ወቅት የአሜሪካ አንዱ ዋና ስጋት ምን ነበር?",
+   "help": "ኮሙኒዝም ወይም የኒውክሌር ጦርነት። መልሱ፦ \"Communism\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "110": {
+   "q": "አሜሪካ የኮሪያን ጦርነት የተቀላቀለችው ለምንድን ነው?",
+   "help": "የኮሙኒዝምን መስፋፋት ለማስቆም። መልሱ፦ \"To stop the spread of communism\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "111": {
+   "q": "አሜሪካ የቬትናምን ጦርነት የተቀላቀለችው ለምንድን ነው?",
+   "help": "የኮሙኒዝምን መስፋፋት ለማስቆም። መልሱ፦ \"To stop the spread of communism\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "112": {
+   "q": "የሲቪል መብቶች እንቅስቃሴ ምን አደረገ?",
+   "help": "የዘር መድልዎን ለማስቆም ታገለ። መልሱ፦ \"Fought to end racial discrimination\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "113": {
+   "q": "ማርቲን ሉተር ኪንግ ጁኒየር በብዙ ነገሮች ይታወቃል። አንዱን ይጥቀሱ።",
+   "help": "ለሲቪል መብቶች ታገለ። መልሱ፦ \"Fought for civil rights\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "114": {
+   "q": "አሜሪካ የፋርስ ባሕረ ሰላጤ ጦርነትን (Persian Gulf War) የተቀላቀለችው ለምንድን ነው?",
+   "help": "የኢራቅን ጦር ከኩዌት ለማስወጣት። መልሱ፦ \"To force the Iraqi military from Kuwait\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "115": {
+   "q": "ሴፕቴምበር 11, 2001 (በአውሮፓውያን አቆጣጠር) በአሜሪካ ምን ትልቅ ክስተት ተፈጠረ?",
+   "help": "አሸባሪዎች አሜሪካን አጠቁ። መልሱ፦ \"Terrorists attacked the United States\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "116": {
+   "q": "ከሴፕቴምበር 11, 2001 ጥቃት በኋላ የተደረገውን አንድ የአሜሪካ ወታደራዊ ግጭት ይጥቀሱ።",
+   "help": "ለምሳሌ የአፍጋኒስታን ጦርነት። መልሱ፦ \"War in Afghanistan\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "117": {
+   "q": "በአሜሪካ የሚገኝ አንድ የአሜሪካ ሕንድ ጎሳ ይጥቀሱ።",
+   "help": "ለምሳሌ ቼሮኪ ወይም ናቫሆ። መልሱ፦ \"Cherokee\" ወይም \"Navajo\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "118": {
+   "q": "የአሜሪካን ፈጠራ አንድ ምሳሌ ይጥቀሱ።",
+   "help": "ለምሳሌ አውሮፕላን (\"Airplane\") ወይም አምፖል (\"Light bulb\")።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "119": {
+   "q": "የአሜሪካ ዋና ከተማ ምንድን ነው?",
+   "help": "ዋሽንግተን ዲሲ። መልሱ፦ \"Washington, D.C.\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "120": {
+   "q": "የነጻነት ሐውልት (Statue of Liberty) የት ይገኛል?",
+   "help": "በኒው ዮርክ ወደብ። መልሱ፦ \"New York Harbor\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "121": {
+   "q": "ሰንደቅ ዓላማው 13 መስመሮች ያሉት ለምንድን ነው?",
+   "help": "13ቱን የመጀመሪያ ቅኝ ግዛቶች ስለሚወክሉ። መልሱ፦ \"Because there were 13 original colonies\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "122": {
+   "q": "ሰንደቅ ዓላማው 50 ኮከቦች ያሉት ለምንድን ነው?",
+   "help": "ለእያንዳንዱ ክፍለ ግዛት አንድ ኮከብ። መልሱ፦ \"One star for each state\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "123": {
+   "q": "የብሔራዊ መዝሙሩ ስም ማን ይባላል?",
+   "help": "መልሱ፦ \"The Star-Spangled Banner\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "124": {
+   "q": "የአገሪቱ የመጀመሪያው መፈክር \"E Pluribus Unum\" ነበር። ትርጉሙ ምንድን ነው?",
+   "help": "ከብዙ አንድ። መልሱ፦ \"Out of many, one\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "125": {
+   "q": "የነጻነት ቀን (Independence Day) ምንድን ነው?",
+   "help": "የአሜሪካን ነጻነት የሚያከብር በዓል፤ የአገሪቱ የልደት ቀን። መልሱ፦ \"The country's birthday\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "126": {
+   "q": "ሦስት የአሜሪካ ብሔራዊ በዓላትን ይጥቀሱ።",
+   "help": "ሦስት ይጥቀሱ፤ ለምሳሌ \"Independence Day\"፣ \"Thanksgiving Day\"፣ \"Christmas Day\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "127": {
+   "q": "የመታሰቢያ ቀን (Memorial Day) ምንድን ነው?",
+   "help": "በውትድርና አገልግሎት ላይ ሕይወታቸውን ያጡ ወታደሮችን የሚዘክር በዓል። መልሱ፦ \"A holiday to honor soldiers who died in military service\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "128": {
+   "q": "የቀድሞ ወታደሮች ቀን (Veterans Day) ምንድን ነው?",
+   "help": "በአሜሪካ ጦር ያገለገሉ ሰዎችን የሚያከብር በዓል። መልሱ፦ \"A holiday to honor people who have served in the U.S. military\"።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  }
+ }
+}

@@ -1,0 +1,385 @@
+{
+ "meta": {
+  "status": "Reviewed Oct 28, 2026: Tsega approved 30 lines herself (approvedBy: tsega); the rest passed two independent AI reviews and her spot check (approvedBy: ai-check)."
+ },
+ "items": {
+  "nav.study": {
+   "en": "Study",
+   "am": "ማጥናት",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "nav.questions": {
+   "en": "All questions",
+   "am": "ሁሉም ጥያቄዎች",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "nav.practice": {
+   "en": "Practice test",
+   "am": "የልምምድ ፈተና",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "nav.interview": {
+   "en": "Mock interview",
+   "am": "የቃለ መጠይቅ ልምምድ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "nav.progress": {
+   "en": "My progress",
+   "am": "የእኔ እድገት",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "nav.settings": {
+   "en": "Settings",
+   "am": "ቅንብሮች",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "hero.title": {
+   "en": "Pass your U.S. citizenship test, with help in Amharic",
+   "am": "የአሜሪካ ዜግነት ፈተናዎን ይለፉ፤ በአማርኛ ማብራሪያ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "hero.body": {
+   "en": "Practice all 128 official civics questions in English, the way the officer will ask them, with Amharic explanations so every answer makes sense.",
+   "am": "ሁሉንም 128 ይፋዊ የሲቪክስ ጥያቄዎች የቃለ መጠይቅ ኦፊሰሩ በሚጠይቅበት መንገድ በእንግሊዝኛ ይለማመዱ። እያንዳንዱ መልስ እንዲገባዎ በአማርኛ ተብራርቷል።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "hero.cta": {
+   "en": "Start studying free",
+   "am": "በነጻ ማጥናት ይጀምሩ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "hero.secondary": {
+   "en": "See all 128 questions",
+   "am": "128ቱን ጥያቄዎች ይመልከቱ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.how": {
+   "en": "How Zega helps",
+   "am": "ዜጋ እንዴት ይረዳዎታል",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.f1": {
+   "en": "Study every official question",
+   "am": "ሁሉንም ይፋዊ ጥያቄዎች ያጥኑ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.f1b": {
+   "en": "Flashcards for all 128 questions from the 2025 test, read out loud in clear English.",
+   "am": "ከ2025 ፈተና ለ128ቱም ጥያቄዎች የጥናት ካርዶች፤ በግልጽ እንግሊዝኛ ጮክ ብለው ይነበባሉ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.f2": {
+   "en": "Practice like the real test",
+   "am": "እንደ እውነተኛው ፈተና ይለማመዱ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "home.f2b": {
+   "en": "Practice tests follow the real rules: up to 20 questions, pass at 12 correct.",
+   "am": "የልምምድ ፈተናዎቹ የእውነተኛውን ፈተና ደንቦች ይከተላሉ፦ እስከ 20 ጥያቄዎች፤ 12ቱን በትክክል ሲመልሱ ያልፋሉ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.f3": {
+   "en": "Answer out loud",
+   "am": "በድምፅ ይመልሱ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "home.f3b": {
+   "en": "The mock interview reads each question aloud and listens to your spoken answer.",
+   "am": "የቃለ መጠይቅ ልምምዱ እያንዳንዱን ጥያቄ ጮክ ብሎ ያነባል፤ የሚናገሩትንም መልስ ያዳምጣል።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "home.f4": {
+   "en": "Understand it in Amharic",
+   "am": "በአማርኛ ይረዱት",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "home.f4b": {
+   "en": "Every question is translated and explained in Amharic. You still answer in English, like at the interview.",
+   "am": "እያንዳንዱ ጥያቄ በአማርኛ ተተርጉሞ ተብራርቷል። መልሱን ግን እንደ ቃለ መጠይቁ በእንግሊዝኛ ይሰጣሉ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.title": {
+   "en": "Set up your study plan",
+   "am": "የጥናት ዕቅድዎን ያዘጋጁ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.test": {
+   "en": "Which test will you take?",
+   "am": "የትኛውን ፈተና ይወስዳሉ?",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.standard": {
+   "en": "2025 civics test",
+   "am": "የ2025 የሲቪክስ ፈተና",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "start.standardNote": {
+   "en": "Up to 20 of the 128 questions. Answer 12 correctly to pass.",
+   "am": "ከ128ቱ ጥያቄዎች እስከ 20 ይጠየቃሉ። ለማለፍ 12 በትክክል መመለስ አለብዎት።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.6520": {
+   "en": "65/20 test",
+   "am": "የ65/20 ፈተና",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "start.6520Note": {
+   "en": "For people 65 or older who have had a green card for 20 years or more. 10 of the 20 starred questions; answer 6 correctly.",
+   "am": "ዕድሜያቸው 65 እና ከዚያ በላይ ሆኖ ለ20 ዓመት ወይም ከዚያ በላይ ግሪን ካርድ ለያዙ ሰዎች። ከ20ዎቹ ኮከብ (*) ምልክት ካላቸው ጥያቄዎች 10 ይጠየቃሉ፤ ለማለፍ 6 በትክክል መመለስ አለብዎት።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.place": {
+   "en": "Where do you live?",
+   "am": "የት ይኖራሉ?",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "start.mine": {
+   "en": "Your own answers",
+   "am": "የእርስዎ መልሶች",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "start.mineNote": {
+   "en": "Three questions depend on where you live and change with elections. Look up the names and write them here.",
+   "am": "ሦስት ጥያቄዎች በሚኖሩበት ቦታ ይወሰናሉ፤ በምርጫም ይቀየራሉ። ስሞቹን ፈልገው እዚህ ይጻፉ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.senator": {
+   "en": "One of your U.S. senators (question 23)",
+   "am": "ከአሜሪካ ሴናተሮችዎ አንዱ (ጥያቄ 23)",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.rep": {
+   "en": "Your U.S. representative (question 29)",
+   "am": "የእርስዎ የምክር ቤት ተወካይ (ጥያቄ 29)",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.governor": {
+   "en": "Your governor (question 61)",
+   "am": "የክፍለ ግዛትዎ አስተዳዳሪ (ጥያቄ 61)",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.amharic": {
+   "en": "Show Amharic help",
+   "am": "የአማርኛ ማብራሪያ ይታይ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "start.save": {
+   "en": "Save and start studying",
+   "am": "ያስቀምጡና ማጥናት ይጀምሩ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.title": {
+   "en": "Flashcards",
+   "am": "የጥናት ካርዶች",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.reveal": {
+   "en": "Show answer",
+   "am": "መልሱን ይመልከቱ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.knew": {
+   "en": "I knew it",
+   "am": "አውቀዋለሁ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.notYet": {
+   "en": "Not yet",
+   "am": "ገና ነው",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.listen": {
+   "en": "Listen",
+   "am": "ያዳምጡ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "study.done": {
+   "en": "Nice work. That's every card for now.",
+   "am": "ጥሩ ሠርተዋል። ለአሁን ሁሉንም ካርዶች ጨርሰዋል።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "questions.title": {
+   "en": "All 128 civics questions",
+   "am": "ሁሉም 128 የሲቪክስ ጥያቄዎች",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.title": {
+   "en": "Practice test",
+   "am": "የልምምድ ፈተና",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "test.choose": {
+   "en": "Choose",
+   "am": "ይምረጡ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "test.say": {
+   "en": "Say or type",
+   "am": "ይናገሩ ወይም ይጻፉ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "test.check": {
+   "en": "Check answer",
+   "am": "መልሱን ያረጋግጡ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "test.next": {
+   "en": "Next question",
+   "am": "ቀጣይ ጥያቄ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "test.right": {
+   "en": "Correct",
+   "am": "ትክክል",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.wrong": {
+   "en": "Not quite",
+   "am": "ልክ አይደለም",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.passed": {
+   "en": "You passed!",
+   "am": "አልፈዋል!",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.failed": {
+   "en": "Not this time. Keep practicing.",
+   "am": "በዚህ ጊዜ አልተሳካም። መለማመድዎን ይቀጥሉ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.start": {
+   "en": "Start the practice test",
+   "am": "የልምምድ ፈተናውን ይጀምሩ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "test.again": {
+   "en": "Take another test",
+   "am": "ሌላ ፈተና ይውሰዱ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "interview.title": {
+   "en": "Mock interview",
+   "am": "የቃለ መጠይቅ ልምምድ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "interview.start": {
+   "en": "Start the interview",
+   "am": "ቃለ መጠይቁን ይጀምሩ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "interview.intro": {
+   "en": "The officer reads each question out loud. Answer in English, out loud or by typing. You'll see how you did at the end, just like the real interview.",
+   "am": "የቃለ መጠይቅ ኦፊሰሩ እያንዳንዱን ጥያቄ ጮክ ብሎ ያነባል። በእንግሊዝኛ በድምፅ ወይም በመጻፍ ይመልሱ። ልክ እንደ እውነተኛው ቃለ መጠይቅ፣ ውጤትዎን በመጨረሻ ያያሉ።",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "interview.mic": {
+   "en": "Tap to answer out loud",
+   "am": "በድምፅ ለመመለስ ይጫኑ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "interview.repeat": {
+   "en": "Repeat the question",
+   "am": "ጥያቄውን እንደገና ያዳምጡ",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "progress.title": {
+   "en": "Are you ready?",
+   "am": "ዝግጁ ነዎት?",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "progress.readiness": {
+   "en": "Readiness",
+   "am": "ዝግጁነት",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "unlock.title": {
+   "en": "Unlock everything",
+   "am": "ሁሉንም ይክፈቱ",
+   "reviewed": true,
+   "approvedBy": "tsega"
+  },
+  "unlock.body": {
+   "en": "One payment. No subscription. Yours until you pass.",
+   "am": "የአንድ ጊዜ ክፍያ። ተደጋጋሚ ክፍያ የለም። እስኪያልፉ ድረስ የእርስዎ ነው።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "common.disclaimer": {
+   "en": "Zega is not affiliated with USCIS or the U.S. government.",
+   "am": "ዜጋ ከUSCIS ወይም ከአሜሪካ መንግሥት ጋር ግንኙነት የለውም።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "common.officialAnswers": {
+   "en": "Official answers",
+   "am": "ይፋዊ መልሶች",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  },
+  "common.checkCurrent": {
+   "en": "This answer changes with elections. Check uscis.gov/citizenship/testupdates before your interview.",
+   "am": "ይህ መልስ በምርጫ ይቀየራል። ከቃለ መጠይቅዎ በፊት uscis.gov/citizenship/testupdates ላይ ያረጋግጡ።",
+   "reviewed": true,
+   "approvedBy": "ai-check"
+  }
+ }
+}

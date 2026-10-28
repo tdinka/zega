@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-paper font-sans text-ink antialiased; }
+h1, h2, h3 { text-wrap: balance; }
+[lang="am"] { line-height: 1.7; }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-navy px-5 py-3 text-base font-semibold text-white transition
+      hover:bg-navy-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-quiet {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-white px-4 py-2.5 text-sm font-medium text-ink transition
+      hover:border-ink-faint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:opacity-50;
+  }
+  .field {
+    @apply w-full rounded-lg border border-line bg-white px-3 py-2.5 text-base text-ink placeholder:text-ink-faint
+      focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/15;
+  }
+  .label { @apply mb-1.5 block text-sm font-semibold text-ink; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.12em] text-ink-soft; }
+  .card { @apply rounded-xl border border-line bg-white; }
+  /* The official question number, set like the USCIS list: "38." with a star for 65/20 */
+  .qnum { @apply font-display text-sm font-semibold tabular-nums text-navy; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
