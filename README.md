@@ -64,7 +64,7 @@ Run it after any change to `content/` or `src/lib/match.ts`.
 
 - [x] Approve the Amharic (all 191 lines, Oct 28, 2026)
 - [x] Confirm the current officials (re-checked Oct 28, 2026; re-check again in early January 2027 after the new Congress starts)
-- [ ] Replace `SUPPORT_EMAIL`, `OPERATOR_NAME` and `GOVERNING_STATE` in `src/lib/config.ts`
+- [x] Replace `SUPPORT_EMAIL`, `OPERATOR_NAME` and `GOVERNING_STATE` in `src/lib/config.ts`
 - [x] Terms and Privacy rewritten in plain language (Oct 28, 2026). Not lawyer-reviewed; refund window is `REFUND_DAYS`
 - [ ] Check the name and domain are free to use
 - [ ] Try the mock interview on an iPhone (Safari) and an Android phone (Chrome)

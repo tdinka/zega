@@ -1,14 +1,15 @@
 // One place for the name and price, so renaming or repricing is a one-line change.
 
-export const APP_NAME = "Zega"; // ዜጋ = "citizen" in Amharic. Working name: check it's free to use.
+export const APP_NAME = "Zega"; // ዜጋ = "citizen" in Amharic. Name confirmed by Tsega, Oct 28, 2026.
 export const APP_NAME_AM = "ዜጋ";
 export const PRICE_CENTS = 1999;
 export const PRICE_LABEL = "$19.99";
-export const SUPPORT_EMAIL = "support@example.com"; // TODO: replace with a real inbox before launch
-/** Who runs Zega, shown in the Terms. TODO before launch: Tsega's legal name or her LLC. */
-export const OPERATOR_NAME = "TODO: your name or company";
-/** U.S. state whose law governs the Terms. TODO: confirm. */
-export const GOVERNING_STATE = "New York";
+export const SUPPORT_EMAIL = "zega.support@gmail.com";
+/** Who runs Zega, shown in the Terms. Same setup as Plainfax: Tsega as an individual. */
+export const OPERATOR_NAME = "Tsega Dinka";
+export const OPERATOR_LOCATION = "Los Angeles, California";
+/** U.S. state whose law governs the Terms. */
+export const GOVERNING_STATE = "California";
 export const REFUND_DAYS = 30;
 export const LEGAL_UPDATED = "October 28, 2026";
 

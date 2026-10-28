@@ -9,7 +9,7 @@ U.S. citizenship (2025 civics test) prep for Amharic speakers. Study, practice t
 - Free: all questions, flashcards, Amharic for Q1–15, one practice test.
 - **The official question and answer text in `content/civics-2025.json` is never reworded.** It matches USCIS Form M-1778 (09/25). Only update it to match a newer USCIS version, then run `npm run check:content`.
 - Current officeholders live only in `content/officials.json` (with an `asOf` date). Senators, representative and governor are never stored by us; learners type their own.
-- Working name "Zega" (ዜጋ), set in `src/lib/config.ts`.
+- Name "Zega" (ዜጋ), confirmed Oct 28, 2026, set in `src/lib/config.ts`.
 
 ## Amharic rules (important)
 - **Tsega is the Amharic reviewer.** Every Amharic item has `"reviewed": false` until she approves it at `/review` (dev only).
@@ -41,17 +41,17 @@ U.S. citizenship (2025 civics test) prep for Amharic speakers. Study, practice t
 
 ## Hosting (Railway, set up Oct 28, 2026)
 - Railway project "zega": service `zega` (auto-deploys from GitHub tdinka/zega on every push) + `Postgres`.
-- Test site: https://zega-production.up.railway.app (port 8080).
+- Site: https://learnzega.com (custom domain, DNS on Cloudflare, added Oct 28, 2026). Railway address https://zega-production.up.railway.app still works (port 8080).
 - Custom start command (set in Railway, not in the repo): `npx prisma db push --skip-generate && npm start`, so the Purchase table is created/updated on each deploy.
 - Variables: DATABASE_URL=${{Postgres.DATABASE_URL}}, APP_URL, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET. ALLOW_SIMULATED_PAYMENTS was removed (Oct 28).
-- Stripe: its own account "Zega" (separate from Fax Just Once), currently a **test sandbox**. Webhook "zega-test-site" -> /api/webhooks/stripe for checkout.session.completed + charge.refunded. Customer emails for successful payments and refunds are on. End-to-end test purchase with 4242 card worked Oct 28, 2026.
-- Going live: activate the Zega Stripe account (business details, bank), create a live-mode webhook to the same URL, swap both Railway Stripe variables to the live sk_live_/whsec_ values.
+- Stripe: its own account "Zega" (separate from Fax Just Once), currently a **test sandbox**. Webhook "zega-test-site" (in the Zega account test mode, not the "Zega sandbox") -> https://learnzega.com/api/webhooks/stripe for checkout.session.completed + charge.refunded. Customer emails for successful payments and refunds are on. End-to-end test purchase with 4242 card worked Oct 28, 2026.
+- Going live: activate the Zega Stripe account (business details, bank), create a live-mode webhook to the same URL, swap both Railway Stripe variables to the live sk_live_/whsec_ values. Then Settings → Business → Public details: website https://learnzega.com, support email zega.support@gmail.com (Stripe locks this until the account is activated; it shows at the bottom of receipts).
 
 ## Where we left off (handoff from Claude chat, Oct 28, 2026)
 Done: app built; all 191 Amharic lines approved; on GitHub (tdinka/zega, private); live on Railway; Stripe connected in test mode (a 4242 test purchase worked end to end); officials re-checked; Terms/Privacy rewritten in plain language.
 
 Next, in order:
-1. Tsega's decisions (also in docs/questions-for-tsega.md): OPERATOR_NAME (her name or an LLC), GOVERNING_STATE (New York for now), SUPPORT_EMAIL, and the name Zega or Zegenet (ዜግነት). Then buy the domain (zega.app / learnzega.com / getzega.com are the candidates), add it in Railway → Settings → Networking → Custom Domain, update APP_URL and the Stripe webhook URL.
+1. Domain: decisions are made and in config.ts (Tsega Dinka, Los Angeles; California law; zega.support@gmail.com; name stays Zega). Domain learnzega.com bought on Cloudflare Oct 28, 2026 (registrar and DNS both at Cloudflare). Connected Oct 28: Railway custom domain + Cloudflare DNS (one-click), APP_URL=https://learnzega.com, Stripe test webhook updated. When going live, the live-mode webhook uses the same learnzega.com URL.
 2. Phone test: the mock interview on iPhone Safari and Android Chrome (microphone permissions, speech recognition).
 3. Stripe go-live (see the Hosting section).
 4. Get 5–10 real Amharic speakers preparing for the interview to try it; then a launch plan (Facebook/Telegram groups, churches, community organizations).

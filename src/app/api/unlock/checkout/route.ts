@@ -34,7 +34,10 @@ export async function POST() {
         },
       ],
       // The code also appears on the Stripe receipt, so buyers can find it later.
-      payment_intent_data: { description: `${APP_NAME} unlock code: ${code}`, metadata: { code } },
+      payment_intent_data: {
+        description: `${APP_NAME} unlock code: ${code}. Enter it at ${appUrl().replace(/^https?:\/\//, "")}/unlock`,
+        metadata: { code },
+      },
       metadata: { code },
       success_url: `${appUrl()}/unlock/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${appUrl()}/unlock`,

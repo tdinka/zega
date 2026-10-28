@@ -1,5 +1,5 @@
-// Plain-language terms. Reviewed Oct 28, 2026 (not by a lawyer): fill in OPERATOR_NAME in src/lib/config.ts before launch.
-import { APP_NAME, GOVERNING_STATE, LEGAL_UPDATED, OPERATOR_NAME, PRICE_LABEL, REFUND_DAYS, SUPPORT_EMAIL } from "@/lib/config";
+// Plain-language terms. Reviewed Oct 28, 2026 (not by a lawyer).
+import { APP_NAME, GOVERNING_STATE, LEGAL_UPDATED, OPERATOR_LOCATION, OPERATOR_NAME, PRICE_LABEL, REFUND_DAYS, SUPPORT_EMAIL } from "@/lib/config";
 
 export const metadata = { title: `Terms | ${APP_NAME}` };
 
@@ -7,7 +7,7 @@ export default function Terms() {
   return (
     <article className="mx-auto max-w-2xl px-4 py-12 sm:px-6 [&_h2]:mt-8 [&_h2]:font-display [&_h2]:text-lg [&_h2]:font-semibold [&_p]:mt-3 [&_p]:text-ink-soft">
       <h1 className="font-display text-3xl font-semibold">Terms of use</h1>
-      <p className="text-sm">Last updated {LEGAL_UPDATED}. {APP_NAME} is run by {OPERATOR_NAME}. By using {APP_NAME}, you agree to these terms.</p>
+      <p className="text-sm">Last updated {LEGAL_UPDATED}. {APP_NAME} is run by {OPERATOR_NAME}, an individual based in {OPERATOR_LOCATION}. By using {APP_NAME}, you agree to these terms.</p>
 
       <h2>Not legal advice, not the government</h2>
       <p>{APP_NAME} is a study tool. It is not affiliated with or endorsed by U.S. Citizenship and Immigration Services (USCIS) or any government agency, and it does not give legal or immigration advice. For questions about your case, talk to USCIS or a qualified immigration attorney or accredited representative.</p>
