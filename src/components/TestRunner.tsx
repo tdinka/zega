@@ -148,6 +148,19 @@ export default function TestRunner({ mode }: { mode: Mode }) {
       <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
         <T k={mode === "practice" ? "test.title" : "interview.title"} as="h1" className="block font-display text-3xl font-semibold" amClass="text-lg" />
         <div className="card mt-6 p-6">
+          {/* Locked: say so first, so the way forward isn't hidden below the fold on phones. */}
+          {locked && (
+            <div className="mb-5 rounded-lg border border-marigold/40 bg-marigold-50 p-4">
+              <p className="font-semibold">
+                {mode === "interview" ? "The mock interview is part of the unlocked version." : "You've used your free practice test."}
+              </p>
+              <p className="mt-1 text-sm text-ink-soft">Unlock once for unlimited tests, the spoken interview and Amharic help for every question.</p>
+              <Link href="/unlock" className="btn-primary mt-3">See unlock options</Link>
+              <p className="mt-2 text-sm">
+                <Link href="/unlock#code" className="underline">Already paid? Enter your unlock code</Link>
+              </p>
+            </div>
+          )}
           {mode === "interview" && <T k="interview.intro" as="p" className="block text-ink" amClass="text-sm" />}
           <dl className="mt-4 grid grid-cols-3 gap-3 text-center">
             {[
@@ -176,13 +189,7 @@ export default function TestRunner({ mode }: { mode: Mode }) {
           )}
 
           {locked ? (
-            <div className="mt-6 rounded-lg border border-marigold/40 bg-marigold-50 p-4">
-              <p className="font-semibold">
-                {mode === "interview" ? "The mock interview is part of the unlocked version." : "You've used your free practice test."}
-              </p>
-              <p className="mt-1 text-sm text-ink-soft">Unlock once for unlimited tests, the spoken interview and Amharic help for every question.</p>
-              <Link href="/unlock" className="btn-primary mt-3">See unlock options</Link>
-            </div>
+            <Link href="/unlock" className="btn-primary mt-6 w-full">See unlock options</Link>
           ) : (
             <button type="button" className="btn-primary mt-6 w-full" onClick={begin}>
               <T k={mode === "practice" ? "test.start" : "interview.start"} amClass="hidden" />
