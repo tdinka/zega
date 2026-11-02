@@ -88,6 +88,11 @@ const cases: Case[] = [
   [113, "civil disobedience", false],
   [88, "he was the fourth president", true],
   [88, "he was president", false],
+  // Second iPhone run (Nov 2, 2026).
+  [68, "born in the united states", true],
+  [68, "naturalization", true],
+  [68, "they can get naturalized", true],
+  [68, "by taking a test", false],
 ];
 for (const [n, said, expected] of cases) {
   const q = QUESTIONS.find((x) => x.n === n)!;

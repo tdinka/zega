@@ -64,6 +64,10 @@ export function variants(answer: string): string[] {
       .join(" ");
     out.add(normalize(text));
   }
+  // "Be born in the United States, under the conditions set by the 14th Amendment"
+  // → "born in the United States" is enough; the "under …" part explains it.
+  const [main, under] = answer.split(/,\s*under\b/);
+  if (under !== undefined) variants(main).forEach((v) => out.add(v));
   // "Twenty-seven (27)" → also accept "27" alone.
   for (const m of answer.matchAll(/\(([^)]*\d[^)]*)\)/g)) out.add(normalize(m[1]));
   return Array.from(out).filter(Boolean);
@@ -94,10 +98,11 @@ function levenshtein(a: string, b: string): number {
   return dp[b.length];
 }
 
-/** Rough word root, so "voting"/"vote", "vetoes"/"veto" and "running"/"run" match. */
+/** Rough word root, so "voting"/"vote", "vetoes"/"veto", "running"/"run" and "naturalization"/"naturalize" match. */
 function root(w: string): string {
   let r = w;
-  if (r.length > 5 && r.endsWith("ing")) r = r.slice(0, -3).replace(/([b-df-hj-np-tv-z])\1$/, "$1");
+  if (r.length > 8 && r.endsWith("ation")) r = r.slice(0, -5);
+  else if (r.length > 5 && r.endsWith("ing")) r = r.slice(0, -3).replace(/([b-df-hj-np-tv-z])\1$/, "$1");
   else if (r.length > 4 && r.endsWith("ies")) r = r.slice(0, -3) + "y";
   else if (r.length > 4 && r.endsWith("oes")) r = r.slice(0, -2);
   else if (r.length > 4 && r.endsWith("ed")) r = r.slice(0, -2);
