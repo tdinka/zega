@@ -97,6 +97,12 @@ const cases: Case[] = [
   [41, "to veto", true],
   [41, "he signs laws", true],
   [41, "makes laws", false],
+  // Third run (Nov 2, 2026): speech says "World War 2", answers say "World War II".
+  [107, "he was a general in world war two", true],
+  [107, "general in world war 2", true],
+  [107, "general in the second world war", true],
+  [107, "general in world war 1", false],
+  [101, "because germany attacked us ships", true],
 ];
 for (const [n, said, expected] of cases) {
   const q = QUESTIONS.find((x) => x.n === n)!;

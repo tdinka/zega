@@ -4,7 +4,7 @@
 
 const STOP = new Set([
   "the", "a", "an", "of", "to", "in", "into", "on", "for", "and", "or", "is", "are", "was", "it", "its", "that", "they", "their",
-  "be", "by", "with", "from", "at", "as", "there", "because", "so",
+  "be", "by", "with", "from", "at", "as", "there", "because", "so", "during",
 ]);
 
 const FILLER = [
@@ -31,7 +31,10 @@ export function normalize(s: string): string {
     .replace(/[^a-z0-9\s-]/g, " ")
     .replace(/-/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    // Official answers say "World War II"; speech gives "World War 2" or "two".
+    .replace(/\bworld war ii\b/g, "world war 2")
+    .replace(/\bworld war i\b/g, "world war 1");
   // Longest number phrases first, so "twenty seven" wins over "seven".
   for (const [word, digit] of Object.entries(NUMBER_WORDS).sort((a, b) => b[0].length - a[0].length)) {
     t = t.replace(new RegExp(`\\b${word.replace(/-/g, " ")}\\b`, "g"), digit);
