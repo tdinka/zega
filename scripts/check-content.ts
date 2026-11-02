@@ -76,6 +76,18 @@ const cases: Case[] = [
   [92, "civil war", true],
   [38, "trump", true],
   [57, "john roberts", true],
+  // From Tsega's iPhone mock interview (Nov 2, 2026): everyday phrasings an officer would accept.
+  [41, "he can veto bills", true],
+  [41, "pastor", false],
+  [69, "voting and running for office", true],
+  [69, "voting", false],
+  [97, "amendment 14", true],
+  [97, "the fourteenth amendment", true],
+  [97, "15th amendment", false],
+  [113, "civil rights", true],
+  [113, "civil disobedience", false],
+  [88, "he was the fourth president", true],
+  [88, "he was president", false],
 ];
 for (const [n, said, expected] of cases) {
   const q = QUESTIONS.find((x) => x.n === n)!;

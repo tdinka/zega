@@ -68,37 +68,82 @@ export function canListen(): boolean {
 export function listenOnce(onPartial?: (text: string) => void): { result: Promise<string>; stop: () => void } {
   const Ctor = RecognitionCtor();
   if (!Ctor) return { result: Promise.reject(new Error("This browser can't listen. Type your answer instead.")), stop: () => {} };
-  const rec = new Ctor();
-  rec.lang = "en-US";
-  rec.interimResults = true;
-  rec.maxAlternatives = 3;
-  rec.continuous = false;
-
-  let best = "";
+  // Phones end recognition at the first pause (iPhone after ~1 second), which cut
+  // off "Name five" answers mid-list. So each time it ends, we start again and keep
+  // adding, until the learner taps done or stays quiet for PAUSE_MS.
+  const PAUSE_MS = 4000;
+  const FIRST_WORDS_MS = 8000;
+  const MAX_MS = 45000;
+  const startedAt = Date.now();
+  let lastHeardAt = 0;
+  let stopped = false;
+  let heard = ""; // finished parts from earlier rounds
+  let current = ""; // the round in progress
   let alternatives: string[] = [];
+  let rec: any = null;
+
   const result = new Promise<string>((resolve, reject) => {
-    rec.onresult = (e: any) => {
-      const res = e.results[e.results.length - 1];
-      best = Array.from(e.results as ArrayLike<any>).map((r: any) => r[0].transcript).join(" ");
-      if (res.isFinal) alternatives = Array.from(res as ArrayLike<any>).map((a: any) => a.transcript);
-      onPartial?.(best);
+    const finish = () => {
+      const best = [heard, current].filter(Boolean).join(" ");
+      resolve([best, ...alternatives.filter((a) => a !== best)].join(" | "));
     };
-    rec.onerror = (e: any) => {
-      const code = e?.error;
-      if (code === "not-allowed" || code === "service-not-allowed") {
-        reject(new Error("Microphone access is blocked. Allow the microphone for this site, or type your answer."));
-      } else if (code === "no-speech") {
-        reject(new Error("We didn't hear anything. Tap the microphone and try again."));
-      } else if (code !== "aborted") {
-        reject(new Error("Listening stopped. Try again, or type your answer."));
-      }
+    const keepGoing = () => {
+      if (stopped) return false;
+      const now = Date.now();
+      if (now - startedAt > MAX_MS) return false;
+      return lastHeardAt ? now - lastHeardAt < PAUSE_MS : now - startedAt < FIRST_WORDS_MS;
     };
-    rec.onend = () => resolve([best, ...alternatives.filter((a) => a !== best)].join(" | "));
+    const round = () => {
+      rec = new Ctor();
+      rec.lang = "en-US";
+      rec.interimResults = true;
+      rec.maxAlternatives = 3;
+      rec.continuous = false;
+      rec.onresult = (e: any) => {
+        const res = e.results[e.results.length - 1];
+        current = Array.from(e.results as ArrayLike<any>).map((r: any) => r[0].transcript).join(" ").trim();
+        if (res.isFinal) alternatives.push(...Array.from(res as ArrayLike<any>).slice(1).map((a: any) => a.transcript));
+        if (current) lastHeardAt = Date.now();
+        onPartial?.([heard, current].filter(Boolean).join(" "));
+      };
+      rec.onerror = (e: any) => {
+        const code = e?.error;
+        if (code === "not-allowed" || code === "service-not-allowed") {
+          stopped = true;
+          reject(new Error("Microphone access is blocked. Allow the microphone for this site, or type your answer."));
+        } else if (code !== "no-speech" && code !== "aborted") {
+          stopped = true;
+          reject(new Error("Listening stopped. Try again, or type your answer."));
+        }
+        // no-speech: onend decides whether to keep waiting or finish.
+      };
+      rec.onend = () => {
+        heard = [heard, current].filter(Boolean).join(" ");
+        current = "";
+        if (keepGoing()) {
+          try {
+            round();
+            return;
+          } catch {
+            /* fall through and finish */
+          }
+        }
+        if (!heard && !stopped) reject(new Error("We didn't hear anything. Tap the microphone and try again."));
+        else finish();
+      };
+      rec.start();
+    };
+    try {
+      round();
+    } catch {
+      reject(new Error("Listening stopped. Try again, or type your answer."));
+    }
   });
-  try {
-    rec.start();
-  } catch {
-    /* already started */
-  }
-  return { result, stop: () => rec.stop() };
+  return {
+    result,
+    stop: () => {
+      stopped = true;
+      rec?.stop();
+    },
+  };
 }

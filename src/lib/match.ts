@@ -36,6 +36,8 @@ export function normalize(s: string): string {
   for (const [word, digit] of Object.entries(NUMBER_WORDS).sort((a, b) => b[0].length - a[0].length)) {
     t = t.replace(new RegExp(`\\b${word.replace(/-/g, " ")}\\b`, "g"), digit);
   }
+  // "14th" and "14" are the same answer ("Amendment 14" for "14th Amendment").
+  t = t.replace(/\b(\d+)(st|nd|rd|th)\b/g, "$1");
   return t.replace(/\s+/g, " ").trim();
 }
 
@@ -67,8 +69,9 @@ export function variants(answer: string): string[] {
   return Array.from(out).filter(Boolean);
 }
 
-// Words people naturally leave out: "executive" for "Executive branch".
-const SOFT = new Set(["branch"]);
+// Words people naturally leave out: "executive" for "Executive branch",
+// "civil rights" for "Fought for civil rights".
+const SOFT = new Set(["branch", "fought"]);
 const COUNTRY = new Set(["united", "state", "states", "us", "america", "american", "nation"]);
 
 const stem = (w: string) => (w.length > 4 && w.endsWith("s") ? w.slice(0, -1) : w);
@@ -91,8 +94,19 @@ function levenshtein(a: string, b: string): number {
   return dp[b.length];
 }
 
+/** Rough word root, so "voting"/"vote", "vetoes"/"veto" and "running"/"run" match. */
+function root(w: string): string {
+  let r = w;
+  if (r.length > 5 && r.endsWith("ing")) r = r.slice(0, -3).replace(/([b-df-hj-np-tv-z])\1$/, "$1");
+  else if (r.length > 4 && r.endsWith("ies")) r = r.slice(0, -3) + "y";
+  else if (r.length > 4 && r.endsWith("oes")) r = r.slice(0, -2);
+  else if (r.length > 4 && r.endsWith("ed")) r = r.slice(0, -2);
+  else if (r.length > 4 && r.endsWith("s")) r = r.slice(0, -1);
+  return r.length > 3 ? r.replace(/e$/, "") : r;
+}
+
 function closeWord(a: string, b: string): boolean {
-  if (a === b) return true;
+  if (a === b || root(a) === root(b)) return true;
   if (a.length < 5 || b.length < 5) return false; // short words must be exact (e.g. "war" vs "law")
   return levenshtein(a, b) <= (Math.max(a.length, b.length) > 8 ? 2 : 1);
 }
