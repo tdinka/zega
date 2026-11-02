@@ -32,4 +32,6 @@ Most learners will tap a link in Facebook, Telegram or WhatsApp, which opens a b
 | 13 | Deny the microphone (or turn it off in settings) and tap the mic | A clear message that the microphone is blocked; typing still works | | |
 
 ## Notes
--
+- iPhone run 1 (Nov 2, 2026): works end to end. Two problems found and fixed: the mic cut off answers at the first pause (now keeps listening until ~4 s of quiet or you tap done), and the checker was too strict ("veto bills", "Amendment 14", "voting and running for office", "civil rights").
+- iPhone run 2 (Nov 2, 2026): pauses fine. Fixed Q68 ("born in the United States", "naturalization").
+- Still to do: Android run, steps 5, 7, 8, 10 on iPhone, and the in-app browser checks (11–13).
