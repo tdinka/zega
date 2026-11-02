@@ -3,7 +3,7 @@
 // spelling mistakes are fine, filler like "I think it's" is ignored.
 
 const STOP = new Set([
-  "the", "a", "an", "of", "to", "in", "on", "for", "and", "or", "is", "are", "was", "it", "its", "that", "they", "their",
+  "the", "a", "an", "of", "to", "in", "into", "on", "for", "and", "or", "is", "are", "was", "it", "its", "that", "they", "their",
   "be", "by", "with", "from", "at", "as", "there", "because", "so",
 ]);
 
@@ -74,8 +74,8 @@ export function variants(answer: string): string[] {
 }
 
 // Words people naturally leave out: "executive" for "Executive branch",
-// "civil rights" for "Fought for civil rights".
-const SOFT = new Set(["branch", "fought"]);
+// "civil rights" for "Fought for civil rights", "veto" for "Vetoes bills".
+const SOFT = new Set(["branch", "fought", "bill"]);
 const COUNTRY = new Set(["united", "state", "states", "us", "america", "american", "nation"]);
 
 const stem = (w: string) => (w.length > 4 && w.endsWith("s") ? w.slice(0, -1) : w);
@@ -106,7 +106,7 @@ function root(w: string): string {
   else if (r.length > 4 && r.endsWith("ies")) r = r.slice(0, -3) + "y";
   else if (r.length > 4 && r.endsWith("oes")) r = r.slice(0, -2);
   else if (r.length > 4 && r.endsWith("ed")) r = r.slice(0, -2);
-  else if (r.length > 4 && r.endsWith("s")) r = r.slice(0, -1);
+  else if (r.length > 3 && /[^siu]s$/.test(r)) r = r.slice(0, -1); // "laws", but not "less", "this", "bus"
   return r.length > 3 ? r.replace(/e$/, "") : r;
 }
 

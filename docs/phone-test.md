@@ -34,4 +34,5 @@ Most learners will tap a link in Facebook, Telegram or WhatsApp, which opens a b
 ## Notes
 - iPhone run 1 (Nov 2, 2026): works end to end. Two problems found and fixed: the mic cut off answers at the first pause (now keeps listening until ~4 s of quiet or you tap done), and the checker was too strict ("veto bills", "Amendment 14", "voting and running for office", "civil rights").
 - iPhone run 2 (Nov 2, 2026): pauses fine. Fixed Q68 ("born in the United States", "naturalization").
-- Still to do: Android run, steps 5, 7, 8, 10 on iPhone, and the in-app browser checks (11–13).
+- Desktop Chrome run (Nov 2, 2026), standing in for Android Chrome (same Google speech service): no repeated words or cut-offs. Fixed Q41 ("to veto", "he signs laws"). Mishearings: "Bible verse" (Q68), "estate" (Q31).
+- Still to do: a real Android phone (ask one of the first testers), steps 5, 7, 8, 10 on iPhone, and the in-app browser checks (11–13).

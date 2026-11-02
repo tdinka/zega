@@ -93,6 +93,10 @@ const cases: Case[] = [
   [68, "naturalization", true],
   [68, "they can get naturalized", true],
   [68, "by taking a test", false],
+  // Chrome run (Nov 2, 2026).
+  [41, "to veto", true],
+  [41, "he signs laws", true],
+  [41, "makes laws", false],
 ];
 for (const [n, said, expected] of cases) {
   const q = QUESTIONS.find((x) => x.n === n)!;
