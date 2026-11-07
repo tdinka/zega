@@ -11,7 +11,7 @@ export const OPERATOR_LOCATION = "Los Angeles, California";
 /** U.S. state whose law governs the Terms. */
 export const GOVERNING_STATE = "California";
 export const REFUND_DAYS = 30;
-export const LEGAL_UPDATED = "October 28, 2026";
+export const LEGAL_UPDATED = "November 7, 2026";
 
 /** Free learners can see Amharic help for questions 1 to this number. */
 export const FREE_AMHARIC_UP_TO = 15;

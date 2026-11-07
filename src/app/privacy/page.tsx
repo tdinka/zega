@@ -1,4 +1,4 @@
-// Plain-language privacy notice. Reviewed Oct 28, 2026 (not by a lawyer). Keep it true: update it if analytics or accounts are ever added.
+// Plain-language privacy notice. Reviewed Nov 7, 2026 (not by a lawyer). Keep it true: update it if analytics or accounts are ever added.
 import { APP_NAME, LEGAL_UPDATED, SUPPORT_EMAIL } from "@/lib/config";
 
 export const metadata = { title: `Privacy | ${APP_NAME}` };
@@ -19,7 +19,7 @@ export default function Privacy() {
       <p>Stripe handles payment. We never see your card number. We keep your unlock code, the payment reference and the email address you gave Stripe, so we can confirm your code, send help and handle refunds. We keep these records for as long as the law requires for tax and accounting.</p>
 
       <h2>Our servers</h2>
-      <p>Like most websites, our hosting provider records basic technical information (such as your IP address and the pages requested) to keep the site running and secure. We don't use advertising trackers or analytics cookies.</p>
+      <p>Like most websites, our hosting provider records basic technical information (such as your IP address and the pages requested) to keep the site running and secure. To count visits, we use Cloudflare Web Analytics, which records which pages are viewed, the browser and the country, without cookies and without identifying you. We don't use advertising trackers or analytics cookies.</p>
 
       <h2>What we don't do</h2>
       <p>We don't sell or share your personal information, and we don't use it for advertising. {APP_NAME} is meant for adults preparing for their naturalization interview and is not directed at children under 13.</p>
