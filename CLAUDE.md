@@ -44,8 +44,9 @@ U.S. citizenship (2025 civics test) prep for Amharic speakers. Study, practice t
 - Site: https://learnzega.com (custom domain, DNS on Cloudflare, added Oct 28, 2026). Railway address https://zega-production.up.railway.app still works (port 8080).
 - Custom start command (set in Railway, not in the repo): `npx prisma db push --skip-generate && npm start`, so the Purchase table is created/updated on each deploy.
 - Variables: DATABASE_URL=${{Postgres.DATABASE_URL}}, APP_URL, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET. ALLOW_SIMULATED_PAYMENTS was removed (Oct 28).
-- Stripe: its own account "Zega" (separate from Fax Just Once), currently a **test sandbox**. Webhook "zega-test-site" (in the Zega account test mode, not the "Zega sandbox") -> https://learnzega.com/api/webhooks/stripe for checkout.session.completed + charge.refunded. Customer emails for successful payments and refunds are on. End-to-end test purchase with 4242 card worked Oct 28, 2026.
-- Going live: activate the Zega Stripe account (business details, bank), create a live-mode webhook to the same URL, swap both Railway Stripe variables to the live sk_live_/whsec_ values. Then Settings → Business → Public details: website https://learnzega.com, support email zega.support@gmail.com (Stripe locks this until the account is activated; it shows at the bottom of receipts).
+- Stripe: its own account "Zega" (separate from Fax Just Once), **live since Nov 7, 2026**. Activated as an individual, category "Other educational services", statement descriptor LEARNZEGA.COM, Radar Lite, Stripe Tax and Climate off. Live webhook "zega-live" -> https://learnzega.com/api/webhooks/stripe for checkout.session.completed + charge.refunded. Railway STRIPE_SECRET_KEY is a restricted key "railway-zega" ("Full access except sensitive operations"; the app only creates and retrieves Checkout Sessions). A real $19.99 purchase and refund worked end to end Nov 7, 2026 (both webhooks 200).
+- The old test-mode webhook "zega-test-site" is still in the Zega account's test mode; harmless.
+- A refund marks the code "refunded" so it can't unlock new devices; a browser that's already unlocked stays unlocked (no accounts, no re-check).
 
 ## Where we left off (handoff from Claude chat, Oct 28, 2026)
 Done: app built; all 191 Amharic lines approved; on GitHub (tdinka/zega, private); live on Railway; Stripe connected in test mode (a 4242 test purchase worked end to end); officials re-checked; Terms/Privacy rewritten in plain language.
@@ -53,7 +54,7 @@ Done: app built; all 191 Amharic lines approved; on GitHub (tdinka/zega, private
 Next, in order:
 1. Domain: decisions are made and in config.ts (Tsega Dinka, Los Angeles; California law; zega.support@gmail.com; name stays Zega). Domain learnzega.com bought on Cloudflare Oct 28, 2026 (registrar and DNS both at Cloudflare). Connected Oct 28: Railway custom domain + Cloudflare DNS (one-click), APP_URL=https://learnzega.com, Stripe test webhook updated. When going live, the live-mode webhook uses the same learnzega.com URL.
 2. Phone test: the mock interview on iPhone Safari and Android Chrome (microphone permissions, speech recognition).
-3. Stripe go-live (see the Hosting section).
+3. Stripe go-live: done Nov 7, 2026. Still check Settings → Business → Public details shows support email zega.support@gmail.com and website https://learnzega.com.
 4. Get 5–10 real Amharic speakers preparing for the interview to try it; then a launch plan (Facebook/Telegram groups, churches, community organizations).
 5. Early January 2027: re-check content/officials.json (new Congress, so the Speaker may change).
 
