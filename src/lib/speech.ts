@@ -60,6 +60,21 @@ export function canListen(): boolean {
   return RecognitionCtor() !== null;
 }
 
+/** One piece of a spoken answer: the recognizer's best guess and its other guesses. */
+export type Piece = { best: string; others: string[] };
+const text = (pieces: Piece[]) => pieces.map((p) => p.best).filter(Boolean).join(" ");
+
+/**
+ * Everything heard, as "best | alternative | …". Each alternative is the whole answer with one
+ * piece heard another way: "speech religion a symbol" also comes as "speech religion assembly",
+ * so a "Name three" answer keeps its first two parts.
+ */
+export function joinPieces(pieces: Piece[]): string {
+  const best = text(pieces);
+  const alternatives = pieces.flatMap((p, i) => p.others.map((o) => text(pieces.map((q, j) => (j === i ? { best: o, others: [] } : q)))));
+  return [best, ...Array.from(new Set(alternatives)).filter((a) => a && a !== best).slice(0, 6)].join(" | ");
+}
+
 /**
  * Listens for one spoken answer. onPartial gets words as they're heard.
  * Resolves with everything heard (all alternatives joined, so the matcher can
@@ -77,16 +92,12 @@ export function listenOnce(onPartial?: (text: string) => void): { result: Promis
   const startedAt = Date.now();
   let lastHeardAt = 0;
   let stopped = false;
-  let heard = ""; // finished parts from earlier rounds
-  let current = ""; // the round in progress
-  let alternatives: string[] = [];
+  const heard: Piece[] = []; // finished rounds
+  let current: Piece[] = []; // the round in progress
   let rec: any = null;
 
   const result = new Promise<string>((resolve, reject) => {
-    const finish = () => {
-      const best = [heard, current].filter(Boolean).join(" ");
-      resolve([best, ...alternatives.filter((a) => a !== best)].join(" | "));
-    };
+    const finish = () => resolve(joinPieces([...heard, ...current]));
     const keepGoing = () => {
       if (stopped) return false;
       const now = Date.now();
@@ -100,11 +111,12 @@ export function listenOnce(onPartial?: (text: string) => void): { result: Promis
       rec.maxAlternatives = 3;
       rec.continuous = false;
       rec.onresult = (e: any) => {
-        const res = e.results[e.results.length - 1];
-        current = Array.from(e.results as ArrayLike<any>).map((r: any) => r[0].transcript).join(" ").trim();
-        if (res.isFinal) alternatives.push(...Array.from(res as ArrayLike<any>).slice(1).map((a: any) => a.transcript));
-        if (current) lastHeardAt = Date.now();
-        onPartial?.([heard, current].filter(Boolean).join(" "));
+        current = Array.from(e.results as ArrayLike<any>).map((r: any) => ({
+          best: String(r[0].transcript).trim(),
+          others: r.isFinal ? Array.from(r as ArrayLike<any>).slice(1).map((a: any) => String(a.transcript).trim()) : [],
+        }));
+        if (text(current)) lastHeardAt = Date.now();
+        onPartial?.(text([...heard, ...current]));
       };
       rec.onerror = (e: any) => {
         const code = e?.error;
@@ -118,8 +130,8 @@ export function listenOnce(onPartial?: (text: string) => void): { result: Promis
         // no-speech: onend decides whether to keep waiting or finish.
       };
       rec.onend = () => {
-        heard = [heard, current].filter(Boolean).join(" ");
-        current = "";
+        heard.push(...current);
+        current = [];
         if (keepGoing()) {
           try {
             round();
@@ -128,7 +140,7 @@ export function listenOnce(onPartial?: (text: string) => void): { result: Promis
             /* fall through and finish */
           }
         }
-        if (!heard && !stopped) reject(new Error("We didn't hear anything. Tap the microphone and try again."));
+        if (!text(heard) && !stopped) reject(new Error("We didn't hear anything. Tap the microphone and try again."));
         else finish();
       };
       rec.start();

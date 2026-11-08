@@ -77,7 +77,10 @@ export function answersFor(q: Question, placeCode: string | undefined, mine: MyA
 
     if (field === "capital") {
       if (place.type === "dc") return ["D.C. is not a state and does not have a capital", "not a state", "no capital"];
-      return place.capital ? [place.capital] : null;
+      if (!place.capital) return null;
+      // "Salt Lake", "Carson", "Jefferson" without "City" (but "Oklahoma" alone isn't Oklahoma City).
+      const short = place.capital.replace(/ City$/, "");
+      return short !== place.capital && short !== place.name ? [place.capital, short] : [place.capital];
     }
     if (field === "senator" && place.type !== "state") {
       const who = place.type === "dc" ? "D.C." : place.name;
@@ -89,11 +92,16 @@ export function answersFor(q: Question, placeCode: string | undefined, mine: MyA
     const typed = mine[field as keyof MyAnswers]?.trim();
     if (!typed) return null;
     // Accept the full name or the last name alone, like USCIS officers do.
-    const parts = typed.split(/\s+/);
+    // "Bob Casey Jr." → last name "Casey", not "Jr.".
+    const parts = typed.split(/\s+/).filter((w, i, all) => i === 0 || i < all.length - 1 || !/^(jr|sr|ii|iii|iv)\.?,?$/i.test(w));
     return parts.length > 1 ? [typed, parts[parts.length - 1]] : [typed];
   }
-  return q.a;
+  // "Who is Commander in Chief?" "Donald Trump." Naming the person who holds the office now is right too.
+  const holder = HOLDER[q.n];
+  return holder ? [...q.a, ...OFFICIALS.officials[holder].answers] : q.a;
 }
+
+const HOLDER: Record<number, keyof typeof OFFICIALS.officials> = { 40: "vicePresident", 42: "president", 43: "president", 44: "president", 45: "president" };
 
 /** Text to show as the answer on screen (keeps the official wording). */
 export function displayAnswers(q: Question, placeCode: string | undefined, mine: MyAnswers): string[] {
